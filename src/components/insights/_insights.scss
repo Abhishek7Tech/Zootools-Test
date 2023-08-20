@@ -1,0 +1,60 @@
+.insights-container {
+  background-color: #ffffff;
+  margin: 30px 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+
+  .insights-zooTools {
+    margin: 30px 10px 40px 20px;
+    min-width: 450px;
+  }
+  .insights-heading {
+    margin-left: 25px;
+    margin-bottom: 2px;
+  }
+  .insights-paragraph {
+    margin-left: 25px;
+    margin-top: 2px;
+  }
+  .summary {
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  .summary-list {
+    list-style: none;
+    padding-left: 25px;
+  }
+  .summary-list-item {
+    display: flex;
+    // justify-content: space-between;
+  }
+  .bulb {
+    background-color: red;
+    border-radius: 2px;
+    height: 28px;
+    width: 27px;
+   
+  }
+  
+  .summary-list-item-para {
+    text-align: end;
+    margin-left: 15px;
+  }
+
+  .recommendation {
+    margin-top: 30px;
+    margin-right: 70px;
+  }
+  .recommendation-heading {
+    margin-top: 90px;
+  }
+  .recommendation-line-1 {
+    margin-top: 5px;
+  }
+  .recommendation-line-2 {
+    line-height: 45px;
+    
+  }
+}

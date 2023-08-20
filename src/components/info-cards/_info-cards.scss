@@ -1,0 +1,121 @@
+@import "../base";
+.info-container {
+  font-family: monospace;
+  background-color: #ffffff;
+  margin-top: 25px;
+  min-width: 40vw;
+  padding: 20px 30px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px 1px grey;
+  .info-header-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-header {
+    margin-left: 10px;
+  }
+  .info-header-button-section {
+    margin: auto 10px;
+  }
+  .info-header-button {
+    @include button-styles;
+    width: min-content;
+  }
+  .button-1 {
+     background-color: #e2e8f0
+  }
+  .button-2 {
+    background-color: #ffffff;
+    margin-left: 10px;
+  }
+  .data-list {
+    margin-left: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  .data-list-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .location-countries {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #fcd34d;
+  }
+  .data-list-item-name {
+    margin-left: 10px;
+    z-index: 10;
+    min-width: max-content;
+  }
+  .data-list-item-img {
+    z-index: 10;
+    padding-left: 5px;
+  }
+  .data-list-item-info {
+    padding-right: 15px;
+  }
+  .see-button {
+    @include button-styles;
+    width: max-content;
+    text-align: center;
+    height: 28px;
+    }
+
+    .user-table {
+      margin: 25px 10px;
+      width: 100%;
+    }
+
+    .user-row {
+      line-height: 35px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .user-heading {
+      text-align: start;
+      font-weight: 400;
+      height: 50px;
+    }
+
+    .user-data {
+      height: 60px;
+      line-height: 60px;
+    }
+
+    .user-email {
+      min-width: 190px ;
+    }
+
+
+    .heading-invited {
+      text-align: end;
+      min-width: 300px;
+      
+    }
+    .user-invited {
+      text-align: start;
+      min-width: 150px;
+
+    }
+
+    .heading-country {
+      min-width: 120px;
+      text-align: end;
+      margin-right: 25px;
+    }
+
+    .user-country {
+      text-align: start;
+      min-width: 80px;
+    }
+
+    .location-countries {
+      height: 30px;
+    }
+
+   
+}

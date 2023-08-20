@@ -1,13 +1,229 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header {
+  display: flex;
+  font-family: monospace;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+.header .days-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0;
+  border-radius: 4px;
+}
+.header .days-list-item {
+  padding: 6px;
+}
+.header .days-list-item button {
+  border: none;
+  border-radius: 3px;
+  height: 24px;
+  width: 42px;
+  cursor: pointer;
+}
+.header .list-button {
+  background-color: #f1f5f9;
+}
+.header .list-button-active {
+  background-color: #e2e8f0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.insights-container {
+  background-color: #ffffff;
+  margin: 30px 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
 }
+.insights-container .insights-zooTools {
+  margin: 30px 10px 40px 20px;
+  min-width: 450px;
+}
+.insights-container .insights-heading {
+  margin-left: 25px;
+  margin-bottom: 2px;
+}
+.insights-container .insights-paragraph {
+  margin-left: 25px;
+  margin-top: 2px;
+}
+.insights-container .summary {
+  margin-left: 25px;
+  margin-top: 30px;
+}
+.insights-container .summary-list {
+  list-style: none;
+  padding-left: 25px;
+}
+.insights-container .summary-list-item {
+  display: flex;
+}
+.insights-container .bulb {
+  background-color: red;
+  border-radius: 2px;
+  height: 28px;
+  width: 27px;
+}
+.insights-container .summary-list-item-para {
+  text-align: end;
+  margin-left: 15px;
+}
+.insights-container .recommendation {
+  margin-top: 30px;
+  margin-right: 70px;
+}
+.insights-container .recommendation-heading {
+  margin-top: 90px;
+}
+.insights-container .recommendation-line-1 {
+  margin-top: 5px;
+}
+.insights-container .recommendation-line-2 {
+  line-height: 45px;
+}
+
+.info-container {
+  font-family: monospace;
+  background-color: #ffffff;
+  margin-top: 25px;
+  min-width: 40vw;
+  padding: 20px 30px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px 1px grey;
+}
+.info-container .info-header-section {
+  display: flex;
+  justify-content: space-between;
+}
+.info-container .info-header {
+  margin-left: 10px;
+}
+.info-container .info-header-button-section {
+  margin: auto 10px;
+}
+.info-container .info-header-button {
+  border: none;
+  border-radius: 3px;
+  height: 24px;
+  width: 42px;
+  cursor: pointer;
+  width: min-content;
+}
+.info-container .button-1 {
+  background-color: #e2e8f0;
+}
+.info-container .button-2 {
+  background-color: #ffffff;
+  margin-left: 10px;
+}
+.info-container .data-list {
+  margin-left: 10px;
+  list-style: none;
+  padding: 0;
+}
+.info-container .data-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.info-container .location-countries {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #fcd34d;
+}
+.info-container .data-list-item-name {
+  margin-left: 10px;
+  z-index: 10;
+  min-width: max-content;
+}
+.info-container .data-list-item-img {
+  z-index: 10;
+  padding-left: 5px;
+}
+.info-container .data-list-item-info {
+  padding-right: 15px;
+}
+.info-container .see-button {
+  border: none;
+  border-radius: 3px;
+  height: 24px;
+  width: 42px;
+  cursor: pointer;
+  width: max-content;
+  text-align: center;
+  height: 28px;
+}
+.info-container .user-table {
+  margin: 25px 10px;
+  width: 100%;
+}
+.info-container .user-row {
+  line-height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.info-container .user-heading {
+  text-align: start;
+  font-weight: 400;
+  height: 50px;
+}
+.info-container .user-data {
+  height: 60px;
+  line-height: 60px;
+}
+.info-container .user-email {
+  min-width: 190px;
+}
+.info-container .heading-invited {
+  text-align: end;
+  min-width: 300px;
+}
+.info-container .user-invited {
+  text-align: start;
+  min-width: 150px;
+}
+.info-container .heading-country {
+  min-width: 120px;
+  text-align: end;
+  margin-right: 25px;
+}
+.info-container .user-country {
+  text-align: start;
+  min-width: 80px;
+}
+.info-container .location-countries {
+  height: 30px;
+}
+
+.info-card-container {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+  flex-wrap: wrap;
+}
+
+.graph-container {
+  font-family: monospace;
+  margin: 30px 50px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 20px 30px;
+}
+.graph-container .graph-header {
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+.graph-container .graph-line {
+  margin-left: 15px;
+}
+
+body {
+  background-color: #e5e7eb;
+}
+
+/*# sourceMappingURL=index.css.map */

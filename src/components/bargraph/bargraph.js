@@ -32,7 +32,6 @@ const options = {
     tooltip: {
       callbacks: {
         label: (context) => {
-          console.log(context.raw);
           return `${context.raw.date}`;
         },
         labelColor: () => {

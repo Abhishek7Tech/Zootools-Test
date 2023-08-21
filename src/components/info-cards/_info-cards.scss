@@ -6,7 +6,7 @@
   min-width: 40vw;
   padding: 20px 30px;
   border-radius: 4px;
-  box-shadow: 2px 2px 1px 1px grey;
+  box-shadow: 2px 2px 1px 2px rgb(207, 207, 207);
   .info-header-section {
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     width: min-content;
   }
   .button-1 {
-     background-color: #e2e8f0
+     font-weight: 600;
   }
   .button-2 {
     background-color: #ffffff;
@@ -49,6 +49,7 @@
     margin-left: 10px;
     z-index: 10;
     min-width: max-content;
+    font-size: 14px;
   }
   .data-list-item-img {
     z-index: 10;
@@ -56,12 +57,14 @@
   }
   .data-list-item-info {
     padding-right: 15px;
+    font-size: 14px
   }
   .see-button {
     @include button-styles;
     width: max-content;
     text-align: center;
     height: 28px;
+    font-weight: 600;
     }
 
     .user-table {

@@ -69,20 +69,24 @@ const InfoCards = (props) => {
 
       {headerInfo.headerName === "User leaderboard" && (
         <table className="user-table">
+          <thead>
           <tr className="user-row">
             <th className="user-heading heading-email">Email</th>
             <th className="user-heading heading-invited">Friends invited</th>
             <th className="user-heading heading-country">Country</th>
           </tr>
+          </thead>
+          <tbody>
           {listInfo.map((data) => {
             return (
-              <tr className="user-row">
+              <tr key={data.id} className="user-row">
                 <td className="user-data user-email">{data.email}</td>
                 <td className="user-data user-invited">{data.invited}</td>
                 <td className="user-data user-country">{data.country}</td>
               </tr>
             );
           })}
+          </tbody>
         </table>
       )}
 

@@ -1,10 +1,11 @@
 .insights-container {
   background-color: #ffffff;
-  margin: 30px 50px;
+  margin: 50px 50px;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   font-family: monospace;
+  box-shadow: 2px 2px 1px 2px rgb(207, 207, 207);
 
   .insights-zooTools {
     margin: 30px 10px 40px 20px;
@@ -44,8 +45,7 @@
   }
 
   .recommendation {
-    margin-top: 30px;
-    margin-right: 70px;
+    margin: 30px auto ;
   }
   .recommendation-heading {
     margin-top: 90px;

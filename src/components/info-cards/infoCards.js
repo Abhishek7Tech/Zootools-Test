@@ -70,22 +70,22 @@ const InfoCards = (props) => {
       {headerInfo.headerName === "User leaderboard" && (
         <table className="user-table">
           <thead>
-          <tr className="user-row">
-            <th className="user-heading heading-email">Email</th>
-            <th className="user-heading heading-invited">Friends invited</th>
-            <th className="user-heading heading-country">Country</th>
-          </tr>
+            <tr className="user-row">
+              <th className="user-heading heading-email">Email</th>
+              <th className="user-heading heading-invited">Friends invited</th>
+              <th className="user-heading heading-country">Country</th>
+            </tr>
           </thead>
           <tbody>
-          {listInfo.map((data) => {
-            return (
-              <tr key={data.id} className="user-row">
-                <td className="user-data user-email">{data.email}</td>
-                <td className="user-data user-invited">{data.invited}</td>
-                <td className="user-data user-country">{data.country}</td>
-              </tr>
-            );
-          })}
+            {listInfo.map((data) => {
+              return (
+                <tr key={data.id} className="user-row">
+                  <td className="user-data user-email">{data.email}</td>
+                  <td className="user-data user-invited">{data.invited}</td>
+                  <td className="user-data user-country">{data.country}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       )}
@@ -130,9 +130,7 @@ const InfoCards = (props) => {
                     width: 2 + +data.signups.split(",")[0] * 4,
                   }}
                 >
-                  <span className="data-list-item-name">
-                    {data.country}
-                  </span>
+                  <span className="data-list-item-name">{data.country}</span>
                 </dl>
                 <dl>
                   <span className="data-list-item-info">{data.signups}</span>

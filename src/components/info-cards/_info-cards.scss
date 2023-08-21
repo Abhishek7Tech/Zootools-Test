@@ -22,7 +22,7 @@
     width: min-content;
   }
   .button-1 {
-     font-weight: 600;
+    font-weight: 600;
   }
   .button-2 {
     background-color: #ffffff;
@@ -57,7 +57,7 @@
   }
   .data-list-item-info {
     padding-right: 15px;
-    font-size: 14px
+    font-size: 14px;
   }
   .see-button {
     @include button-styles;
@@ -65,60 +65,55 @@
     text-align: center;
     height: 28px;
     font-weight: 600;
-    }
+  }
 
-    .user-table {
-      margin: 25px 10px;
-      width: 100%;
-    }
+  .user-table {
+    margin: 25px 10px;
+    width: 100%;
+  }
 
-    .user-row {
-      line-height: 35px;
-      display: flex;
-      justify-content: space-between;
-    }
+  .user-row {
+    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .user-heading {
-      text-align: start;
-      font-weight: 400;
-      height: 50px;
-    }
+  .user-heading {
+    text-align: start;
+    font-weight: 400;
+    height: 50px;
+  }
 
-    .user-data {
-      height: 60px;
-      line-height: 60px;
-    }
+  .user-data {
+    height: 60px;
+    line-height: 60px;
+  }
 
-    .user-email {
-      min-width: 190px ;
-    }
+  .user-email {
+    min-width: 190px;
+  }
 
+  .heading-invited {
+    text-align: end;
+    min-width: 300px;
+  }
+  .user-invited {
+    text-align: start;
+    min-width: 150px;
+  }
 
-    .heading-invited {
-      text-align: end;
-      min-width: 300px;
-      
-    }
-    .user-invited {
-      text-align: start;
-      min-width: 150px;
+  .heading-country {
+    min-width: 120px;
+    text-align: end;
+    margin-right: 25px;
+  }
 
-    }
+  .user-country {
+    text-align: start;
+    min-width: 80px;
+  }
 
-    .heading-country {
-      min-width: 120px;
-      text-align: end;
-      margin-right: 25px;
-    }
-
-    .user-country {
-      text-align: start;
-      min-width: 80px;
-    }
-
-    .location-countries {
-      height: 30px;
-    }
-
-   
+  .location-countries {
+    height: 30px;
+  }
 }

@@ -1,36 +1,34 @@
 @import "../base";
 
 .header {
+  display: flex;
+  font-family: monospace;
+  justify-content: space-between;
+  // width: 100%;
+  margin: 0 50px;
+  .days-list {
     display: flex;
-    font-family: monospace;
-    justify-content: space-between;
-    // width: 100%;
-    margin: 0 50px;
-    .days-list {
-        display: flex;
-        list-style: none;
-        // background-color: rgb(185, 42, 42);
-        justify-content: space-around;
-        align-items: center;
-        background-color: #ffffff;
-        padding: 0;
-        border-radius: 6px;
-        box-shadow: 0px 1px 1px 1px rgb(207, 207, 207);
+    list-style: none;
+    // background-color: rgb(185, 42, 42);
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0px 1px 1px 1px rgb(207, 207, 207);
+  }
+  .days-list-item {
+    padding: 8px;
+    button {
+      @include button-styles;
     }
-    .days-list-item {
-        padding: 8px;
-        button {
-          @include button-styles;
-        }
-    }
+  }
 
-    
-    .list-button {
-        background-color: #f1f5f9;
-    }
+  .list-button {
+    background-color: #f1f5f9;
+  }
 
-    .list-button-active {
-        background-color: #e2e8f0;
-    }
-
+  .list-button-active {
+    background-color: #e2e8f0;
+  }
 }

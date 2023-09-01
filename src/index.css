@@ -62,9 +62,10 @@
 }
 .insights-container .summary-list-item {
   display: flex;
+  align-items: center;
 }
 .insights-container .bulb {
-  background-color: red;
+  background-color: #fcd34d;
   border-radius: 2px;
   height: 28px;
   width: 27px;
